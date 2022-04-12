@@ -21,9 +21,9 @@ def main():
                 sys.exit()
 
         key = pygame.key.get_pressed()
-        txt1 = font.render("UP" + str(key[pygame.K_UP]) + " DOWN" + str(key[pygame.K_DOWN]), True, WHITE, GREEN)
-        txt2 = font.render("LEFT" + str(key[pygame.K_LEFT]) + " RIGHT" + str(key[pygame.K_RIGHT]), True, WHITE, BLUE)
-        txt3 = font.render("SPACE" + str(key[pygame.K_SPACE]) + " ENTER" + str(key[pygame.K_RETURN]), True, WHITE, RED)
+        txt1 = font.render("UP " + str(key[pygame.K_UP]) + " DOWN " + str(key[pygame.K_DOWN]), True, WHITE, GREEN)
+        txt2 = font.render("LEFT " + str(key[pygame.K_LEFT]) + " RIGHT " + str(key[pygame.K_RIGHT]), True, WHITE, BLUE)
+        txt3 = font.render("SPACE " + str(key[pygame.K_SPACE]) + " ENTER " + str(key[pygame.K_RETURN]), True, WHITE, RED)
 
         screen.fill(BLACK)
         screen.blit(txt1, [100, 100])
